@@ -19,7 +19,7 @@ function App() {
           <Route path="/business" element={<Business />} />
           <Route path="/student" element={<Student />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/businessform" element={<BusinessForm />} />
+          {/* <Route path="/businessform" element={<BusinessForm />} /> */}
           <Route path="/studentform" element={<StudentForm />} />
           <Route path="*" element={<NoPage />} />
         </Routes>

@@ -1,0 +1,134 @@
+.page-container {
+  background-image: linear-gradient(
+      315deg,
+      transparent 0%,
+      transparent 11%,
+      rgba(156, 156, 156, 0.06) 11%,
+      rgba(156, 156, 156, 0.06) 81%,
+      transparent 81%,
+      transparent 100%
+    ),
+    linear-gradient(
+      315deg,
+      transparent 0%,
+      transparent 18%,
+      rgba(156, 156, 156, 0.06) 18%,
+      rgba(156, 156, 156, 0.06) 64%,
+      transparent 64%,
+      transparent 100%
+    ),
+    linear-gradient(
+      405deg,
+      transparent 0%,
+      transparent 13%,
+      rgba(156, 156, 156, 0.06) 13%,
+      rgba(156, 156, 156, 0.06) 22%,
+      transparent 22%,
+      transparent 100%
+    ),
+    linear-gradient(360deg, rgb(0, 0, 0), rgb(0, 0, 0));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: center;
+  height: 100vh;
+}
+
+.bm-glass {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 50px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.32);
+}
+
+.bm-title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.bm-title::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 50px;
+  background: red;
+  left: 0;
+  bottom: 0;
+}
+
+.bm-glass .bm-form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+.bm-form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2-20px);
+}
+
+.user-details .input-box .bm-input {
+  height: 30px;
+  width: 300px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box .bm-input:focus,
+.user-details .input-box .bm-input:valid {
+  border-color: #9b59b6;
+}
+
+.user-details .input-box .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.user-details .input-box:nth-child(7) .bm-input {
+  width: 690px;
+  height: 30px;
+}
+
+.user-details .input-box {
+  position: relative; /* Ensure relative positioning */
+}
+
+.user-details .input-box .error-message {
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  color: red;
+}
+
+.bm-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sub-btn {
+  padding: 10px 20px;
+}

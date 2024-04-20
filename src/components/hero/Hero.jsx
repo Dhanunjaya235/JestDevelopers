@@ -2,15 +2,10 @@ import "../hero/Hero.css";
 import Navbar from "../navbar/Navbar";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import MuiNavbar from "../mui/navbar/navbar";
-import CssNav from "../navbars/cssnav";
 
 const Hero = () => {
   return (
     <>
-      {/* <CssNav /> */}
-
-      {/* <MuiNavbar /> */}
       <div className="hero-container">
         <Navbar />
         <div className="something">

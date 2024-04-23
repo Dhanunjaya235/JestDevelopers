@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../navbar/Navbar.css";
+import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 const Navbar = () => {
@@ -29,7 +29,7 @@ const Navbar = () => {
           }`}
         >
           <i className="uil uil-bars navOpenBtn" onClick={toggleNav}></i>
-          <a href="#" className="logo">
+          <a href="#">
             <img
               src="src\components\navbar\logo.png"
               alt="Logo"
@@ -40,29 +40,19 @@ const Navbar = () => {
           <ul className="nav-links">
             <i className="uil uil-times navCloseBtn" onClick={toggleNav}></i>
             <li>
-              <NavLink exact to="/" activeClassName="active">
-                Home
-              </NavLink>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/about" activeClassName="active">
-                About Us
-              </NavLink>
+              <NavLink to="/about">About Us</NavLink>
             </li>
             <li>
-              <NavLink to="/business" activeClassName="active">
-                Business
-              </NavLink>
+              <NavLink to="/business">Business</NavLink>
             </li>
             <li>
-              <NavLink to="/student" activeClassName="active">
-                Student
-              </NavLink>
+              <NavLink to="/student">Student</NavLink>
             </li>
             <li>
-              <NavLink to="/blog" activeClassName="active">
-                Blogs
-              </NavLink>
+              <NavLink to="/blog">Blogs</NavLink>
             </li>
           </ul>
 

@@ -27,12 +27,6 @@
   color: red;
   text-align: center;
 }
-.b-card-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .b-card {
   color: white;
@@ -117,4 +111,13 @@
 .b-btn-link:focus::before {
   transform: scaleX(1);
   border-radius: 2px;
+}
+
+
+@media (max-width:770px) {
+
+  .b-title{
+    margin-top: 48px;
+  }
+  
 }
